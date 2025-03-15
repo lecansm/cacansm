@@ -6,6 +6,7 @@
     <link rel="icon" href="img/coracao.png">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+	<link href="css/hover-min.css" rel="stylesheet">
 
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
@@ -14,7 +15,10 @@
     <!-- MDB -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/styles.css">
-  
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   
@@ -22,10 +26,14 @@
 </head>
 <body>
 
-    <!--Corpo do cabeçalho-->
-    <div class="imgHeader">
+    <script>
+        AOS.init();
+      </script>
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary mt-lg-5" id="main">
+    <!--Corpo do cabeçalho-->
+    <div id="start" class="imgHeader">
+    <!--Menu-->
+    <nav data-aos="fade-up" data-aos-duration="3000" class="navbar navbar-expand-lg navbar-light bg-body-tertiary mt-lg-5" id="main">
 
     <div class="container-fluid justify-content-between mt-2">
     <!-- Left elements -->
@@ -39,25 +47,25 @@
         <!-- Center elements margin temporaria -->
         <ul class="navbar-nav flex-row d-none d-md-flex me-5">
             <li class="nav-item me-5 me-lg-4 active">
-            <a class="nav-link" href="#">
+            <a class="nav-link hvr-fade" href="#">
                 Home
             </a>
             </li>
     
             <li class="nav-item me-5 me-lg-4">
-            <a class="nav-link" href="#">
+            <a class="nav-link hvr-fade2" href="#aboutMe">
                 Sobre mim
             </a>
             </li>
     
             <li class="nav-item me-5 me-lg-4">
-            <a class="nav-link" href="#">
+            <a class="nav-link hvr-fade3" href="#projects">
                 Projetos
             </a>
             </li>
     
             <li class="nav-item me-5 me-lg-4">
-            <a class="nav-link" href="#">
+            <a class="nav-link hvr-fade4" href="#skills">
                 Habilidades
             </a>
             </li>
@@ -68,8 +76,8 @@
         <!-- Right elements -->
         <ul class="navbar-nav flex-row">
             <li class="nav-item me-5 me-lg-2">
-            <a class="nav-link d-sm-flex align-items-sm-center" href="#">
-                <button class="btnctt">Contato</button>
+            <a class="nav-link d-sm-flex align-items-sm-center" href="#contact">
+                <button class="btnctt hvr-pulse-grow">Contato</button>
             </a>
             </li>
         </ul>
@@ -78,16 +86,17 @@
 
     </nav>
 
+
     <div class="presentation mt-lg-5">
             <div class="d-flex justify-content-center gap-5 mt-3">
                 <h3 class="txtCarac">CRIATIVA</h3>
-                <div class="ball mt-1"></div>
+                <div data-aos="fade-right" data-aos-duration="2000" class="ball mt-1"></div>
                 <h3 class="txtCarac">INOVADORA</h3>
-                <div class="ball2 mt-1"></div>
+                <div data-aos="fade-left" data-aos-duration="2000" class="ball2 mt-1"></div>
                 <h3 class="txtCarac">EMPÁTICA</h3>
             </div>
 
-            <div class="d-flex justify-content-center mt-lg-2">
+            <div data-aos="zoom-in" data-aos-duration="2000" class="d-flex justify-content-center mt-lg-2">
                 <h2 class="txtPre">De cada detalhe nasce uma experiência</h2>
             </div>
     
@@ -96,16 +105,36 @@
             </div>
 
             <div class="d-flex justify-content-center gap-5 mt-3">
-                <button class="btnPre">Meu Trabalho</button>
-                <button class="btnPre2">Sobre mim</button>
+                <a href="#projects">
+                    <button data-aos="fade-right" data-aos-duration="3000" class="btnPre hvr-pulse-grow">Meu Trabalho</button>
+                </a>
+                <a href="#aboutMe">
+                    <button data-aos="fade-left" data-aos-duration="3000" class="btnPre2 hvr-pulse-grow">Sobre mim</button>
+                </a>
             </div>  
 
     </div>
-
     </div>
     <!--Fim do cabeçalho-->
 
-    <div class="aboutMe mt-lg-5">
+    <!--Menu Compacto-->
+    <nav id="compactMenu" class="menu">
+                <input type="checkbox" href="#" class="menu-open" name="menu-open" id="menu-open" />
+                <label class="menu-open-button" for="menu-open">
+                 <span class="lines line-1"></span>
+                 <span class="lines line-2"></span>
+                 <span class="lines line-3"></span>
+               </label>
+             
+                <a href="#" class="menu-item blue"> <i class="fa fa-moon-o"></i> </a>
+                <a href="#contact" class="menu-item green"> <i class="fa fa-phone"></i> </a>
+                <a href="#" class="menu-item purple"> <i class="fa fa-home"></i> </a>
+                <a href="#skills" class="menu-item orange"> <i class="fa fa-lightbulb-o"></i> </a>
+                <a href="#aboutMe" class="menu-item lightblue"> <i class="fa fa-user"></i> </a>
+                <a href="#projects" class="menu-item red"> <i class="fa fa-cogs"></i> </a>
+    
+    </nav>
+    <div id="aboutMe" class="aboutMe mt-lg-5">
 
         <div class="shape square"></div>
         <div class="shape triangle2"></div>
@@ -114,45 +143,45 @@
         <div class="shape parallelogram"></div>
 
         <div class="row">
-            <div class="col-md-6">
+            <div data-aos="fade-right" data-aos-duration="2000" class="col-md-6">
                 <h4 class="txtPre2">Sobre mim</h4>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae molestias tenetur, neque, ratione ipsum blanditiis exercitationem voluptate sequi eveniet quod perspiciatis minima rem. Aspernatur veritatis quia magni voluptates ex illo.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae molestias tenetur, neque, ratione ipsum blanditiis exercitationem voluptate sequi eveniet quod perspiciatis minima rem. Aspernatur veritatis quia magni voluptates ex illo.</p>
 
             </div>
-        <div class="d-flex justify-content-center col-md-6">
+        <div data-aos="fade-left" data-aos-duration="2000" class="d-flex justify-content-center col-md-6">
         <img class="fotoEu" src="img/caca.png" alt="">
         </div>
     </div>
     </div>
 
-    <div class="projects">
+    <div id="projects" class="projects">
         <br><br>
         <div class="d-flex justify-content-center gap-5 mt-lg-5">
             <h4 class="txtPre2">Projetos</h4>
         </div>
         <div class="d-flex justify-content-center gap-5 mt-3">
             <h3 class="txtCarac">ACADEMICOS</h3>
-            <div class="ball mt-1"></div>
+            <div data-aos="fade-right" data-aos-duration="2000"  class="ball mt-1"></div>
             <h3 class="txtCarac">PROFISSIONAIS</h3>
-            <div class="ball2 mt-1"></div>
+            <div data-aos="fade-left" data-aos-duration="2000"  class="ball2 mt-1"></div>
             <h3 class="txtCarac">PESSOAIS</h3>
         </div>
 
     <div class="d-flex justify-content-center gap-5 mt-lg-5">
 
-        <div class="cont">
+        <div data-aos="fade-right" data-aos-duration="2000" class="cont">
             <img class="imgProject" src="img/testeProjeto.jpg" alt="Imagem de Imóvel">
             <div class="imgBehind"></div>
         </div>
 
-        <div class="cont">
+        <div data-aos="fade-up" data-aos-duration="2000" class="cont">
             <img class="imgProject" src="img/testeProjeto.jpg" alt="Imagem de Imóvel">
             <div sty class="imgBehind2"></div>
         </div>
 
 
-        <div class="cont">
+        <div data-aos="fade-left" data-aos-duration="2000" class="cont">
             <img class="imgProject" src="img/testeProjeto.jpg" alt="Imagem de Imóvel">
             <div class="imgBehind3"></div>
         </div>
@@ -160,18 +189,18 @@
     <br>
     <div class="d-flex justify-content-center gap-5 mt-lg-2">
 
-        <div class="cont">
+        <div data-aos="fade-right" data-aos-duration="2000" class="cont">
             <img class="imgProject" src="img/testeProjeto.jpg" alt="Imagem de Imóvel">
             <div class="imgBehind5"></div>
         </div>
 
-        <div class="cont">
+        <div data-aos="fade-up" data-aos-duration="2000" class="cont">
             <img class="imgProject" src="img/testeProjeto.jpg" alt="Imagem de Imóvel">
             <div class="imgBehind"></div>
         </div>
 
 
-        <div class="cont">
+        <div data-aos="fade-left" data-aos-duration="2000" class="cont">
             <img class="imgProject" src="img/testeProjeto.jpg" alt="Imagem de Imóvel">
             <div class="imgBehind4"></div>
         </div>
@@ -180,65 +209,94 @@
     
     </div>
 
-    <div class="skills">
+    <div id="skills" class="skills">
         <br><br>
         <div class="d-flex justify-content-center gap-5 mt-lg-5">
             <h4 class="txtPre2">Minhas Habilidades</h4>
         </div>
         <div class="d-flex justify-content-center gap-5 mt-3">
             <h3 class="txtCarac">TECNOLOGIA</h3>
-            <div class="ball mt-1"></div>
+            <div data-aos="fade-right" data-aos-duration="1500"  class="ball mt-1"></div>
             <h3 class="txtCarac">CRIAÇÃO</h3>
-            <div class="ball2 mt-1"></div>
+            <div data-aos="fade-left" data-aos-duration="1500"  class="ball2 mt-1"></div>
             <h3 class="txtCarac">ARTE</h3>
         </div>
 
         <div class="d-flex justify-content-center gap-5 mt-lg-5">
-            <div class="cardhabilidade justify-content-center gap-5 mt-3">
-                <img class="imgSkill" src="img/ps.png" alt="">
+            <div data-aos="zoom-in" data-aos-duration="1500" class="cardhabilidade justify-content-center gap-5 mt-3">
+                <img class="imgSkill hvr-pulse-grow" src="img/ps.png" alt="">
                 <h3 class="txtPre3">Photoshop</h3>
                 <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio</p>
             </div>
-            <div class="cardhabilidade justify-content-center gap-5 mt-3">
-                <img class="imgSkill" src="img/ps.png" alt="">
+            <div data-aos="zoom-in" data-aos-duration="1500" class="cardhabilidade justify-content-center gap-5 mt-3">
+                <img class="imgSkill hvr-pulse-grow" src="img/ps.png" alt="">
                 <h3 class="txtPre3">Photoshop</h3>
                 <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio</p>
             </div>
-            <div class="cardhabilidade justify-content-center gap-5 mt-3">
-                <img class="imgSkill" src="img/ps.png" alt="">
+            <div data-aos="zoom-in" data-aos-duration="1500" class="cardhabilidade justify-content-center gap-5 mt-3">
+                <img class="imgSkill hvr-pulse-grow" src="img/ps.png" alt="">
                 <h3 class="txtPre3">Photoshop</h3>
                 <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio</p>
             </div>
-            <div class="cardhabilidade justify-content-center gap-5 mt-3">
-                <img class="imgSkill" src="img/ps.png" alt="">
+            <div data-aos="zoom-in" data-aos-duration="1500" class="cardhabilidade justify-content-center gap-5 mt-3">
+                <img class="imgSkill hvr-pulse-grow" src="img/ps.png" alt="">
                 <h3 class="txtPre3">Photoshop</h3>
                 <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio</p>
             </div>
         </div>
         <br><br>
         <div class="d-flex justify-content-center gap-5 mt-lg-5">
-            <div class="cardhabilidade justify-content-center gap-5 mt-3">
-                <img class="imgSkill" src="img/ps.png" alt="">
+            <div  data-aos="zoom-in" data-aos-duration="1500" class="cardhabilidade justify-content-center gap-5 mt-3">
+                <img class="imgSkill hvr-pulse-grow" src="img/ps.png" alt="">
                 <h3 class="txtPre3">Photoshop</h3>
                 <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio</p>
             </div>
-            <div class="cardhabilidade justify-content-center gap-5 mt-3">
-                <img class="imgSkill" src="img/ps.png" alt="">
+            <div  data-aos="zoom-in" data-aos-duration="1500" class="cardhabilidade justify-content-center gap-5 mt-3">
+                <img class="imgSkill hvr-pulse-grow" src="img/ps.png" alt="">
                 <h3 class="txtPre3">Photoshop</h3>
                 <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio</p>
             </div>
-            <div class="cardhabilidade justify-content-center gap-5 mt-3">
-                <img class="imgSkill" src="img/ps.png" alt="">
+            <div data-aos="zoom-in" data-aos-duration="1500" class="cardhabilidade justify-content-center gap-5 mt-3">
+                <img class="imgSkill hvr-pulse-grow" src="img/ps.png" alt="">
                 <h3 class="txtPre3">Photoshop</h3>
                 <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio</p>
             </div>
-            <div class="cardhabilidade justify-content-center gap-5 mt-3">
-                <img class="imgSkill" src="img/ps.png" alt="">
+            <div data-aos="zoom-in" data-aos-duration="1500" class="cardhabilidade justify-content-center gap-5 mt-3">
+                <img class="imgSkill hvr-pulse-grow" src="img/ps.png" alt="">
                 <h3 class="txtPre3">Photoshop</h3>
                 <p style="text-align: center;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Distinctio</p>
             </div>
         </div>
+    </div>
+<br><br><br><br><br><br><br><br><br>
+    <footer id="contact" class="contact pb-5">
+        <div class="d-flex justify-content-center gap-5 mt-lg-5">
+            <h4 style="color: white;" class="txtPre4 mt-lg-5">Entre em contato comigo</h4>
+        </div>
+        <div class="d-flex justify-content-center gap-5 mt-lg-5">
+            <a class="hvr-pulse-grow" href="https://www.linkedin.com/in/caroline-nascimento-817074300/" target="_blank">
+            <img class="icon" src="img/linkedin.png" alt="">
+            </a>
+            <a class="hvr-pulse-grow" href="mailto:nascimentocaroline003@gmail.com?subject=Oportunidade%20empresarial&body=Ol%C3%A1%20Caroline%2C%20vim%20pelo%20seu%20portif%C3%B3lio%20e%20tive%20interesse%20em%20seu%20perfil%20podemos%20marcar%20um%20bate%20papo%3F" target="_blank">
+            <img class="icon" src="img/email.png" alt="">
+            </a>
+            <a class="hvr-pulse-grow" href="https://www.behance.net/carolinnascime52" target="_blank">
+            <img class="icon" src="img/be.png" alt="">
+            </a>
+            <a class="hvr-pulse-grow" href="https://www.linkedin.com/in/caroline-nascimento-817074300/" target="_blank">
+            <img class="icon" src="img/doc3.png" alt="">
+            </a>
+        </div>
+        <br>
+    </footer>
 
+    <script src="main.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
 
 </body>
 </html>
