@@ -13,7 +13,7 @@ document.addEventListener('scroll', function() {
 
 document.getElementById('compactMenu').style.display = 'none';
 document.querySelectorAll('.imgHeader').forEach(el => {
-    el.style.backgroundImage = "url('cacansm/img/b.png')";
+    el.style.backgroundImage = "url('/img/b.png')";
 });
 
 
