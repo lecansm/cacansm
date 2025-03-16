@@ -33,7 +33,7 @@ document.getElementById('modoDark').addEventListener('click', function() {
 
     document.querySelectorAll('.imgHeader').forEach(el => {
         if (el.style.backgroundImage.includes('b.png')) {
-            el.style.backgroundImage = "url('../img/darkbg.jpg')";
+            el.style.backgroundImage = "url('cacansm/img/darkbg.jpg')";
         } else {
             el.style.backgroundImage = "url('cacansm/img/b.png')";
         }
