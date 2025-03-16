@@ -13,7 +13,7 @@ document.addEventListener('scroll', function() {
 
 document.getElementById('compactMenu').style.display = 'none';
 document.querySelectorAll('.imgHeader').forEach(el => {
-    el.style.backgroundImage = "url('../img/b.png')";
+    el.style.backgroundImage = "url('cacansm/img/b.png')";
 });
 
 
@@ -35,7 +35,7 @@ document.getElementById('modoDark').addEventListener('click', function() {
         if (el.style.backgroundImage.includes('b.png')) {
             el.style.backgroundImage = "url('../img/darkbg.jpg')";
         } else {
-            el.style.backgroundImage = "url('../img/b.png')";
+            el.style.backgroundImage = "url('cacansm/img/b.png')";
         }
     });
 
