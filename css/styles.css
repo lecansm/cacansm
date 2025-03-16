@@ -262,6 +262,7 @@ a {
     height: 650px;
     display: inline-block;
     border: 0px;
+    background-image: url('cacansm/img/b.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
