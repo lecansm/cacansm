@@ -13,7 +13,7 @@ document.addEventListener('scroll', function() {
 
 document.getElementById('compactMenu').style.display = 'none';
 document.querySelectorAll('.imgHeader').forEach(el => {
-    el.style.backgroundImage = "url('/img/fundo2.png')";
+    el.style.backgroundImage = "url('../img/fundo2.png')";
 });
 
 
@@ -33,9 +33,9 @@ document.getElementById('modoDark').addEventListener('click', function() {
 
     document.querySelectorAll('.imgHeader').forEach(el => {
         if (el.style.backgroundImage.includes('fundo2.png')) {
-            el.style.backgroundImage = "url('/img/darkbg.jpg')";
+            el.style.backgroundImage = "url('../img/darkbg.jpg')";
         } else {
-            el.style.backgroundImage = "url('/img/fundo2.png')";
+            el.style.backgroundImage = "url('../img/fundo2.png')";
         }
     });
 
