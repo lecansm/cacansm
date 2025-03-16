@@ -12,7 +12,9 @@ document.addEventListener('scroll', function() {
 });
 
 document.getElementById('compactMenu').style.display = 'none';
-
+document.querySelectorAll('.imgHeader').forEach(el => {
+    el.style.backgroundImage = "url('cacansm/img/b.png')";
+});
 
 
 document.getElementById('modoDark').addEventListener('click', function() {
@@ -29,7 +31,13 @@ document.getElementById('modoDark').addEventListener('click', function() {
     document.querySelectorAll('.contact, .contact2').forEach(el => el.classList.toggle('contact2'));
 
 
-
+    document.querySelectorAll('.imgHeader').forEach(el => {
+        if (el.style.backgroundImage.includes('b.png')) {
+            el.style.backgroundImage = "url('../img/darkbg.jpg')";
+        } else {
+            el.style.backgroundImage = "url('cacansm/img/b.png')";
+        }
+    });
 
     document.body.classList.toggle('dark-mode-bg');
 
