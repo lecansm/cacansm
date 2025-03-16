@@ -262,7 +262,7 @@ a {
     height: 650px;
     display: inline-block;
     border: 0px;
-    background-image: url('../img/fundo2.png');
+    background-image: url('../img/back.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -527,7 +527,7 @@ p {
 .projects{
     width: 100%;
     height: 1150px;
-    background-image: url('../img/fundo.jpg');
+    background-image: url('../img/backp.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
