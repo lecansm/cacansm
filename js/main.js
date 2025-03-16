@@ -13,7 +13,7 @@ document.addEventListener('scroll', function() {
 
 document.getElementById('compactMenu').style.display = 'none';
 document.querySelectorAll('.imgHeader').forEach(el => {
-    el.style.backgroundImage = "url('cacansm/img/b.png')";
+    el.style.backgroundImage = "url('cacansm/img/b.png')!important";
 });
 
 
@@ -23,7 +23,6 @@ document.getElementById('modoDark').addEventListener('click', function() {
     document.querySelectorAll('.nav-link, .nav-link2').forEach(el => el.classList.toggle('nav-link2'));
     document.querySelectorAll('.txtCarac, .txtCaracD').forEach(el => el.classList.toggle('txtCaracD'));
     document.querySelectorAll('.aboutMe, .aboutMe2').forEach(el => el.classList.toggle('aboutMe2'));
-    document.querySelectorAll('.projects, .projects2').forEach(el => el.classList.toggle('projects2'));
     document.querySelectorAll('.navbar-light, .navbar-dark').forEach(el => el.classList.toggle('navbar-dark'));
     document.querySelectorAll('.bg-body-tertiary, .bg-dark').forEach(el => el.classList.toggle('bg-dark'));
     document.querySelectorAll('.txtPre, .txtPreD').forEach(el => el.classList.toggle('txtPreD'));
@@ -33,11 +32,20 @@ document.getElementById('modoDark').addEventListener('click', function() {
 
     document.querySelectorAll('.imgHeader').forEach(el => {
         if (el.style.backgroundImage.includes('b.png')) {
-            el.style.backgroundImage = "url('cacansm/img/darkbg.jpg')";
+            el.style.backgroundImage = "url('cacansm/img/darkbg.jpg')!important";
         } else {
-            el.style.backgroundImage = "url('cacansm/img/b.png')";
+            el.style.backgroundImage = "url('cacansm/img/b.png')!important";
         }
     });
+
+    document.querySelectorAll('.projects').forEach(el => {
+        if (el.style.backgroundImage.includes('b.png')) {
+            el.style.backgroundImage = "url('cacansm/img/hq720.jpg')!important";
+        } else {
+            el.style.backgroundImage = "url('cacansm/img/backp.png')!important";
+        }
+    });
+
 
     document.body.classList.toggle('dark-mode-bg');
 
