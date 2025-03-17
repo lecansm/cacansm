@@ -11,12 +11,6 @@ document.addEventListener('scroll', function() {
     }
 });
 
-document.getElementById('compactMenu').style.display = 'none';
-document.querySelectorAll('.imgHeader').forEach(el => {
-    el.style.backgroundImage = "url('cacansm/img/b.png')!important";
-});
-
-
 document.getElementById('modoDark').addEventListener('click', function() {
     document.querySelectorAll('.txtPre2, .txtPre2D').forEach(el => el.classList.toggle('txtPre2D'));
     document.querySelectorAll('.txtPre3, .txtPre3D').forEach(el => el.classList.toggle('txtPre3D'));
@@ -29,22 +23,27 @@ document.getElementById('modoDark').addEventListener('click', function() {
     document.querySelectorAll('.ce, .ce2').forEach(el => el.classList.toggle('ce2'));
     document.querySelectorAll('.contact, .contact2').forEach(el => el.classList.toggle('contact2'));
 
+   // Alternar exibição dos elementos
+   const start = document.getElementById('start');
+   const start2 = document.getElementById('start2');
+   const projects = document.getElementById('projects');
+   const projects2 = document.getElementById('projects2');
 
-    document.querySelectorAll('.imgHeader').forEach(el => {
-        if (el.style.backgroundImage.includes('b.png')) {
-            el.style.backgroundImage = "url('cacansm/img/darkbg.jpg')!important";
-        } else {
-            el.style.backgroundImage = "url('cacansm/img/b.png')!important";
-        }
-    });
+   if (start.style.display === 'none') {
+       start.style.display = ' inline-block';
+       start2.style.display = 'none';
+   } else {
+       start.style.display = 'none';
+       start2.style.display = ' inline-block';
+   }
 
-    document.querySelectorAll('.projects').forEach(el => {
-        if (el.style.backgroundImage.includes('b.png')) {
-            el.style.backgroundImage = "url('cacansm/img/hq720.jpg')!important";
-        } else {
-            el.style.backgroundImage = "url('cacansm/img/backp.png')!important";
-        }
-    });
+   if (projects.style.display === 'none') {
+       projects.style.display = ' inline-block';
+       projects2.style.display = 'none';
+   } else {
+       projects.style.display = 'none';
+       projects2.style.display = ' inline-block';
+   }
 
 
     document.body.classList.toggle('dark-mode-bg');
