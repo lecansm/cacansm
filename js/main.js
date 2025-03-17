@@ -34,7 +34,7 @@ document.getElementById('modoDark').addEventListener('click', function() {
        start2.style.display = 'none';
    } else {
        start.style.display = 'none';
-       start2.style.display = ' inline-block';
+       start2.style.display = 'inline-block';
    }
 
    if (projects.style.display === 'none') {

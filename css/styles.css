@@ -50,7 +50,6 @@ a {
    }
    .txtCaracD {
       font-size: 15px !important;
-      font-size: 20px !important;
       margin: 0%;
    }
    .txtPre {
@@ -166,6 +165,8 @@ a {
    .menu{
       width: 50px !important;
       height: 50px !important;
+      left: 92% !important;
+      top: -10% !important;
    }
 
    .blue {
@@ -244,6 +245,45 @@ a {
       -webkit-transition-duration: 380ms;
       -webkit-transform: translate3d(-90.9466px, 152.47586px, 0)!important;
       transform: translate3d(-90.9466px, 152.47586px, 0)!important;
+   }
+
+   .square {
+      width: 100px !important;
+      height: 100px !important;
+      margin-top: 2% !important;
+   }
+
+   .triangle {
+      border-left: 200px solid transparent  !important;
+      border-right: 60px solid transparent !important;
+      border-bottom: 100px solid #1abcfe !important;
+      margin-top: 45% !important;
+   }
+   .trapezoid {
+      width: 150px  !important;
+      height: 0  !important;
+      border-left: 50px solid transparent  !important;
+      border-right: 50px solid transparent  !important;
+      border-bottom: 100px solid #a259ff  !important;
+      margin-top: 115% !important;
+      left:0% !important;
+   }
+
+   .triangle2 {
+      border-left: 60px solid transparent  !important;
+      border-right: 160px solid transparent !important;
+      border-bottom: 100px solid #FE4365 !important;
+      margin-top: 75% !important;
+      left:70% !important;
+   }
+
+   .parallelogram {
+      width: 100px!important;
+      height: 50px!important;
+      background: #0acf83;
+      transform: skew(20deg);
+      right: 5%;
+      margin-top: 10% !important;
    }
 
 }
@@ -494,7 +534,6 @@ p {
     width: 200px;
     height: 200px;
     background-color: #f24e1e;
-    top: 70%;
     left: 0%;
 }
 
@@ -504,7 +543,6 @@ p {
     border-left: 400px solid transparent;
     border-right: 120px solid transparent;
     border-bottom: 200px solid #1abcfe;
-    top: 100%;
     right: 15%;
 }
 
@@ -514,8 +552,7 @@ p {
     border-left: 400px solid transparent;
     border-right: 120px solid transparent;
     border-bottom: 200px solid #ff7262;
-    top: 98%;
-    left: 6%;
+
 }
 
 .trapezoid {
@@ -524,7 +561,6 @@ p {
     border-left: 100px solid transparent;
     border-right: 100px solid transparent;
     border-bottom: 200px solid #a259ff;
-    bottom: 5%;
     left: 30%;
 }
 
@@ -533,7 +569,6 @@ p {
     height: 80px;
     background: #0acf83;
     transform: skew(20deg);
-    bottom: 3%;
     right: 5%;
 }
 
