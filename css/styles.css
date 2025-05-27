@@ -290,6 +290,13 @@ a {
       gap: 1.5rem !important;
    }
 
+   .presentation{
+      width: 100%;
+      height: 400px;
+      justify-content: center;
+      margin: auto;
+   }
+
 }
 
 @media (min-width: 600px) and (max-width: 1366px) {
