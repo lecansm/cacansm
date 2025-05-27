@@ -23,6 +23,7 @@ document.getElementById('modoDark').addEventListener('click', function() {
     document.querySelectorAll('.ce, .ce2').forEach(el => el.classList.toggle('ce2'));
     document.querySelectorAll('.contact, .contact2').forEach(el => el.classList.toggle('contact2'));
 
+
    // Alternar exibição dos elementos
    const start = document.getElementById('start');
    const start2 = document.getElementById('start2');
@@ -43,6 +44,15 @@ document.getElementById('modoDark').addEventListener('click', function() {
    } else {
        projects.style.display = 'none';
        projects2.style.display = ' inline-block';
+   }
+
+   const icon = this.querySelector('i');
+   if (icon.classList.contains('fa-moon')) {
+       icon.classList.remove('fa-moon');
+       icon.classList.add('fa-sun');
+   } else {
+       icon.classList.remove('fa-sun');
+       icon.classList.add('fa-moon');
    }
 
 
